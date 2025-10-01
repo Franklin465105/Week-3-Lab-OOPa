@@ -6,9 +6,11 @@ public class Calculator {
 
     public int add(int firstNum, int secondNum) { return firstNum + secondNum; }
 
-    public int sub(int firstNum, int secondNum) {
+    public int sub(int firstNum, int secondNum) { return firstNum - secondNum; }
 
-        return firstNum - secondNum;
+    public int multiply(int firstNum, int secondNum) {
+
+        return firstNum * secondNum;
 
     }
 
