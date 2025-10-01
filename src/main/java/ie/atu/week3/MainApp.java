@@ -31,6 +31,10 @@ public class MainApp {
                 Calculator calc = new Calculator();
                 yield calc.sub(firstNum, secondNum);
             }
+            case "multiply" -> {
+                Calculator calc = new Calculator();
+                yield calc.multiply(firstNum, secondNum);
+            }
             default -> {
                 System.out.println("Invalid operation.");
                 yield 0;
