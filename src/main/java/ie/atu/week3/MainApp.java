@@ -14,12 +14,8 @@ public class MainApp {
 
         input.nextLine();
 
-        System.out.println("Choose an operation (add, subtract, multiply, divide): ");
+        System.out.println("Choose an operation (add, subtract, multiply, divide, power, modulo): ");
         String operation = input.next(); // Waits for correct input
-
-        if (input.hasNextDouble()) {
-
-        }
 
 
         double result = switch (operation) {
@@ -39,11 +35,17 @@ public class MainApp {
                 Calculator calc = new Calculator();
                 yield calc.divide(firstNum, secondNum);
             }
-
+            case "power" -> {
+                Calculator calc = new Calculator();
+                yield calc.power(firstNum, secondNum);
+            }
+            case "modulo" -> {
+                Calculator calc = new Calculator();
+                yield calc.modulo(firstNum, secondNum);
+            }
             default -> {
                 System.out.println("Invalid operation.");
                 yield 0;
-
             }
 
         };

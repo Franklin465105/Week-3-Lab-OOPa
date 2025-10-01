@@ -10,9 +10,17 @@ public class Calculator {
 
     public int multiply(int firstNum, int secondNum) { return firstNum * secondNum; }
 
-    public int divide(int firstNum, int secondNum) {
+    public int divide(int firstNum, int secondNum) { return firstNum / secondNum; }
 
-        return firstNum / secondNum;
+    public int power(int base, int exponent) {
+
+        return (int)  Math.pow(base, exponent);
+
     }
 
+    public int modulo(int firstNum, int secondNum) {
+
+        return firstNum % secondNum;
+
+    }
 }
